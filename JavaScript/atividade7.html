@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calcule a velocidade média</h1>
+
+    <p id="kms"></p>
+    <p id="tempo"></p>
+    <h3 id= "result"></h3>
+
+
+    <script>
+
+    //Faça um programa que leia uma distância percorrida (km) e um tempo (horas). Retorne a velocidade média (km/h).
+        let kms = prompt("Quantos kms você andou? ");
+        let tempo = prompt("Em quantas horas? ");
+
+           //Conversão
+           let result = kms/tempo;
+        
+
+         //Mostrar o resultado
+        document.getElementById("kms").innerHTML = "Você percorreu " + kms + "  Kilometros!";
+        document.getElementById("tempo").innerHTML = "em " + tempo + "  horas!";
+        document.getElementById("result").innerHTML = "A velocidade média é:  " + result + "km/h";
+
+
+    </script>
+</body>
+</html>

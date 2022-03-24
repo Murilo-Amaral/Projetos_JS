@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calcule o IMC</h1>
+
+    <p id="peso"></p>
+    <p id="altura"></p>   
+    <h3 id="IMC"></h3>
+    
+
+    <script>
+    // Faça um programa que leia o peso e altura de uma pessoa. Calcule e retorne o seu IMC (Índice de Massa Corporal) através da fórmula:
+
+
+        let altura = parseFloat(prompt("Digite a sua altura: "));
+        let peso = parseFloat(prompt("Digite o seu peso: "));
+        
+        
+            //Conversão
+
+        let imc = peso / altura**2;
+        
+
+         //Mostrar o resultado
+        document.getElementById("peso").innerHTML = "o seu peso é:  " + peso;
+        document.getElementById("altura").innerHTML = "a sua altura é:  " + altura;
+        document.getElementById("IMC").innerHTML = "o seu IMC é:  " + imc;
+
+    </script>
+</body>
+</html>

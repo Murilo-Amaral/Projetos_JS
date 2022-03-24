@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calcule a idade em dias</h1>
+
+    <p id="anos"></p>
+    <p id="meses"></p>   
+    <p id="dias"></p>
+    <h3 id= "days"></h3>
+
+
+    <script>
+    //Faça um programa que leia a idade de uma pessoa em anos, meses e dias e mostre na tela essa idade expressa em dias.
+        let anos = prompt("Digite a sua idade em anos: ");
+        let meses = prompt("Digite a sua idade em meses: ");
+        let dias = prompt("Digite a sua idade em dias: ");
+
+           //Conversão
+        let days = (anos*365) + (meses*30) + dias;
+        
+
+         //Mostrar o resultado
+        document.getElementById("anos").innerHTML = "a idade em anos é:  " + anos;
+        document.getElementById("meses").innerHTML = "a sua idade em meses é:  " + meses;
+        document.getElementById("dias").innerHTML = "a sua idade em dias é:  " + dias;
+        document.getElementById("days").innerHTML = "a sua idade total em dias é:  " + days;
+        alert ("A sua idade em dias é: " + days);
+
+    </script>
+</body>
+</html>

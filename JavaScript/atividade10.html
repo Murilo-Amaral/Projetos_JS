@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formula de Bháskara</h1>
+    <p id="a"></p>
+    <p id="b"></p>   
+    <p id="c"></p>
+    <h3 id="Delta"></h3>
+    <script>
+    //Faça um script que leia a quantidade comprada de um produto, seu valor unitário, e um percentual de desconto. Calcule e exiba o valor a pagar por aquele produto.
+        let a = prompt("Insira valor do a: ");
+        let b = prompt("insira valor do b: ");
+        let c= prompt("insira valor do c: ");
+            //Conversão
+        let Delta = b**2 - 4 * a * c;
+         //Mostrar o resultado
+        document.getElementById("Delta").innerHTML = "Valor de delta e:  " + Delta;
+    </script>
+</body>
+</html>

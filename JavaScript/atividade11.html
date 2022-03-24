@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Vendas</h1>
+    <p id="custo"></p>
+    <p id="lucro"></p>
+    <p id="venda"></p>
+   
+    <script>
+    //Faça um script que leia a base e a altura de um triângulo, em seguida, calcule sua área (base * altura / 2), e apresente os dados lidos e calculados na tela.
+        let custo = parseInt( prompt("Insira o preço de custo: "));
+        let lucro = parseInt( prompt("insira valor do lucro: "));
+        
+            //Conversão
+         let venda = (custo *lucro/100) + custo;
+         //Mostrar o resultado
+        document.getElementById("venda").innerHTML = "Valor de venda e:  " + venda;
+    </script>
+</body>
+</html>

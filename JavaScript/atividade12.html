@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Conversão de Temperaturas</h1>
+    <h3 id="result"></h3>
+    <script>
+    //a)Faça uma função que receba uma temperaturaem graus Fahrenheit, calcule e escreva o valor correspondente em graus Celsiusatravés da fórmula:
+    //b)Faça uma função que receba uma temperaturaem graus Celsius, calcule e escreva o valor correspondente em graus Fahrenheitatravés da fórmula:
+
+        let x = prompt("se você quer converter de Celsius para Fahrenheit digite [1] \n se quiser passar de Fahrenheit para Celsius digite [2]!")
+        
+        //Conversão
+        if(x == 1){
+            let celso = parseFloat( prompt("Quantos graus Celsius? "));
+
+            let F = celso * 1.8 + 32;
+            document.getElementById("result").innerHTML = "Convertendo " + celso + "C° para Fahrenheit, fica " + F + "F°"; 
+
+        }else{
+            let faren = parseFloat( prompt("Quantos graus Fahrenheit? "));
+            let C = (faren - 32) / 1.8; 
+            document.getElementById("result").innerHTML = "Convertendo " + faren + "F° para Celsius, fica " + C + "C°"; 
+
+            } 
+    </script>
+</body>
+</html>

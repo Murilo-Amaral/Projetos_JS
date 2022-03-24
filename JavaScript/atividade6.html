@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calcule a Média Ponderada </h1>
+        <p id=nota1></p>
+        <p id=nota2></p>
+        <p id=nota3></p>
+        <h3 id=media></h3>
+
+    <script>
+    //Faça um programa que leia três notas de um aluno e três pesos. Calcule e retorne sua Média Ponderada. A média ponderada de n números é a soma dos produtos de cada um multiplicados por seus respectivos pesos, dividida pela soma dos pesos, isto é:
+        let nota1 = parseInt(prompt("Digite a primeira nota: "));
+        let peso1 = parseInt(prompt("Digite o seu primeiro peso: "));
+        let nota2 = parseInt(prompt("Digite a segunda nota: "));
+        let peso2 = parseInt(prompt("Digite o segundo peso: "));
+        let nota3 = parseInt(prompt("Digite a terceira nota: "));
+        let peso3 = parseInt(prompt("Digite o terceiro peso: "));
+
+        //cálculo
+
+        let somaP = peso1+peso2+peso3;
+        let nP1= nota1*peso1;
+        let nP2= nota2*peso2;
+        let nP3= nota3*peso3;
+        let media = (nP1+nP2+nP3) / somaP; 
+
+        //Mostrar o resultado
+
+        document.getElementById("nota1").innerHTML = "Primeira nota: " + nota1 + "  Primeiro peso: " + peso1;
+        document.getElementById("nota2").innerHTML = "Segunda nota: " + nota2 + "  Segundo peso: "    + peso2;
+        document.getElementById("nota3").innerHTML = "Terceira nota: " + nota3 + "  Terceiro Peso: "  + peso3;
+        document.getElementById("media").innerHTML = "A sua média ponderada é: " + media;
+        
+    </script>
+    
+    
+    
+</body>
+</html>

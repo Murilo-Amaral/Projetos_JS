@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calcular o volume de uma esfera</h1>
+
+    <h2 id="raio"></h2>
+    <h2 id="volume"></h2>
+
+    <script>
+    // Faça um programa que leia o raio de uma esfera. Calcule e mostre seu volume na tela através da fórmula:
+        let raio = prompt("Digite o raio da esfera");
+        let pi = 3.141592;
+        let volume = 4 * pi * raio**3/3;
+
+        //Mostrar o resultado
+
+        document.getElementById("raio").innerHTML = "O raio é: " + raio;
+        document.getElementById("volume").innerHTML = "O Volume da esfera é: " + volume;
+        alert("O volume da esfera é: "+ volume);
+    </script>
+</body>
+</html>

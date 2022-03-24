@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Calcular a área de uma circunferência</h1>
+
+    <h2 id="raio"></h2>
+    <h2 id="area"></h2>
+
+    <script>
+    //Faça um programa que leia o raio de uma circunferência. Calcule e mostre na tela sua área através da fórmula
+        let raio = prompt("Digite o raio de uma circuferência: ");
+        let pi = 3.141592;
+        let area = pi * raio**2;
+
+        //Mostrar o resultado
+
+        document.getElementById("raio").innerHTML = "O raio é: " + raio;
+        document.getElementById("area").innerHTML = "A área é: " + area;
+        alert("A area é: "+ area);
+    </script>
+</body>
+</html>

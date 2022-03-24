@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Média de combustivel gasto</h1>
+
+    <p id="distancia"></p>
+    <p id="combustivel"></p>   
+    <h3 id="resultado"></h3>
+    
+
+    <script>
+    //Construa uma função que receba 2 parâmetros, sendo: a distância percorrida por um veículo em uma viagem e o consumo de combustível (em litros) gastos nesse trajeto. Calcule e retorne o consumo médio de combustível desta viagem.
+        let distancia = prompt("Digite a distância percorrida pelo veículo em quilometros: ");
+        let combustivel = prompt("Digite a quantidade de combustivel gasto em litros: ");
+        
+            //Conversão
+
+        let resultado = distancia / combustivel;
+        
+
+         //Mostrar o resultado
+        document.getElementById("resultado").innerHTML = "a média de combustivel gasto por Km é:  " + resultado;
+       
+
+    </script>
+</body>
+</html>

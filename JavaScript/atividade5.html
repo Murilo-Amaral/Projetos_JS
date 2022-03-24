@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calcule a média de um aluno</h1>
+
+    <p id="n1"></p>
+    <p id="n2"></p>   
+    <p id="n3"></p>
+    <p id="n4"></p>
+    <h3 id=media></h3>
+   
+
+
+    <script>
+    //Faça um programa que leia quatro notas de um aluno por parâmetro. Calcule e mostre na tela sua Média Aritmética.
+        let n1 = parseInt(prompt("Digite a primeira nota: "));
+        let n2 = parseInt(prompt("Digite a segunda nota: "));
+        let n3 = parseInt(prompt("Digite a sua terceira nota: "));
+        let n4 = parseInt(prompt("Digite a sua quarta nota: "));
+
+           //Conversão
+        let soma = n1+n2+n3+n4;
+        let media =  soma/4;
+        
+
+         //Mostrar o resultado
+        document.getElementById("n1").innerHTML = "Primeira nota: " + n1;
+        document.getElementById("n2").innerHTML = "Segunda nota: " + n2;
+        document.getElementById("n3").innerHTML = "Terceira nota: " + n3;
+        document.getElementById("n4").innerHTML = "Quarta nota: " + n4;
+        document.getElementById("media").innerHTML = "A sua média final é: " + media;
+        alert("A média final é: " + media);
+        
+
+    </script>
+</body>
+</html>
